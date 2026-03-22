@@ -1,0 +1,27 @@
+APP SUMMARY (Repo-Evidence Based)
+
+What it is
+- Not found in repo.
+- Evidence: repository directory /Users/Admin/Documents/CODEX contains no app source files or docs.
+
+Who it's for
+- Primary user/persona: Not found in repo.
+
+What it does
+- Feature set: Not found in repo.
+- API/services: Not found in repo.
+- UI/workflows: Not found in repo.
+- Integrations: Not found in repo.
+- Data handling/storage: Not found in repo.
+- Authentication/authorization: Not found in repo.
+
+How it works (architecture)
+- Components: Not found in repo.
+- Services: Not found in repo.
+- Data flow: Not found in repo.
+- Repo evidence used: empty root directory listing only.
+
+How to run
+1. Add or clone the application code into /Users/Admin/Documents/CODEX.
+2. Open project docs (README / package manager files) and follow startup commands.
+3. If no docs exist, startup instructions are Not found in repo.
