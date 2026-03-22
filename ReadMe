@@ -1,0 +1,15 @@
+# Yield Street Capital
+
+Static clicker game inspired by AdVenture Capitalist, re-themed around private credit and asset-based finance.
+
+## Run
+
+Open [index.html](/Users/Admin/Documents/CODEX/index.html) in a browser.
+
+## Gameplay
+
+- Click `Close Bilateral Deal` to generate fee income.
+- Buy strategies to add passive yield and grow AUM.
+- Hit milestones at 10, 25, 50, and 100 units for automatic production boosts.
+- Purchase platform upgrades to institutionalize the franchise.
+- Raise a new vintage to reset progress and earn permanent LP Trust multipliers.
