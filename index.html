@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yield Street Capital</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Private Credit and Asset-Based Finance</p>
+        <h1>Build an alternative asset manager from bilateral loans to platform-scale ABF.</h1>
+        <p class="hero-text">
+          Source deals, scale underwriting, warehouse assets, and raise larger vintages.
+          The loop is simple: click to originate, reinvest earnings, stack yield, and compound LP trust.
+        </p>
+      </div>
+      <div class="hero-kpis">
+        <div class="stat-card">
+          <span class="stat-label">Retained Earnings</span>
+          <strong id="cashDisplay">$0</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Net Yield / sec</span>
+          <strong id="incomeDisplay">$0</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Platform AUM</span>
+          <strong id="aumDisplay">$0</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">LP Trust</span>
+          <strong id="trustDisplay">0x</strong>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel originations-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Origination Desk</p>
+            <h2>Keep the funnel full</h2>
+          </div>
+          <div class="buy-mode" id="buyModeGroup" aria-label="Buy quantity">
+            <button class="mode-button is-active" data-mode="1">Buy 1</button>
+            <button class="mode-button" data-mode="10">Buy 10</button>
+            <button class="mode-button" data-mode="max">Buy Max</button>
+          </div>
+        </div>
+
+        <button id="clickButton" class="click-button" type="button">
+          <span class="click-title">Close Bilateral Deal</span>
+          <span class="click-subtitle" id="clickValueDisplay">+ $0 per deal</span>
+        </button>
+
+        <div class="mini-stats">
+          <div>
+            <span class="mini-label">Deals Closed</span>
+            <strong id="dealsDisplay">0</strong>
+          </div>
+          <div>
+            <span class="mini-label">Lifetime Earnings</span>
+            <strong id="lifetimeDisplay">$0</strong>
+          </div>
+          <div>
+            <span class="mini-label">Best AUM</span>
+            <strong id="bestAumDisplay">$0</strong>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel side-panel">
+        <div class="market-card" id="marketCard">
+          <p class="eyebrow">Market Tape</p>
+          <h2 id="marketName">Base Case</h2>
+          <p id="marketDescription">Steady deployment with rational pricing.</p>
+          <div class="market-grid">
+            <div>
+              <span class="mini-label">Income Multiplier</span>
+              <strong id="marketIncomeMult">1.00x</strong>
+            </div>
+            <div>
+              <span class="mini-label">Click Multiplier</span>
+              <strong id="marketClickMult">1.00x</strong>
+            </div>
+            <div>
+              <span class="mini-label">Rotation In</span>
+              <strong id="marketTimer">0s</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="fund-card">
+          <p class="eyebrow">Fundraising</p>
+          <h2>Raise a new vintage</h2>
+          <p id="prestigeSummary">
+            Reset the platform to bank permanent LP trust and return with a stronger fundraising story.
+          </p>
+          <div class="fund-grid">
+            <div>
+              <span class="mini-label">Available LP Trust</span>
+              <strong id="prestigeGain">0</strong>
+            </div>
+            <div>
+              <span class="mini-label">Vintages Raised</span>
+              <strong id="vintageDisplay">0</strong>
+            </div>
+          </div>
+          <button id="prestigeButton" class="secondary-button" type="button">Raise New Vintage</button>
+        </div>
+
+        <div class="memo-card">
+          <p class="eyebrow">Investment Memo</p>
+          <ul class="memo-list">
+            <li>Clicking closes bilateral deals and generates immediate fee income.</li>
+            <li>Each strategy adds passive earnings and expands headline AUM.</li>
+            <li>Managerial milestones trigger automatically at 10, 25, 50, and 100 units.</li>
+            <li>Fundraising resets the buildout but increases all future production permanently.</li>
+          </ul>
+          <div class="utility-actions">
+            <button id="saveButton" class="ghost-button" type="button">Save</button>
+            <button id="resetButton" class="ghost-button danger" type="button">Reset Save</button>
+          </div>
+          <p class="save-state" id="saveStatus">Autosave enabled.</p>
+        </div>
+      </aside>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Strategies</p>
+            <h2>Deploy capital across the platform</h2>
+          </div>
+        </div>
+        <div id="strategyGrid" class="card-grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Upgrades</p>
+            <h2>Institutionalize the franchise</h2>
+          </div>
+        </div>
+        <div id="upgradeGrid" class="card-grid upgrade-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
